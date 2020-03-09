@@ -4,7 +4,7 @@ A header-only library adding user-defined types support to Qt D-Bus module.
 D-Bus has support only for basic types like integer and string, so we are forced to build our D-Bus api with those basic types. In case we need to use our custom type we would need to serialize it to a string (e.g. JSON format) on the caller side and desirialize it back on the server side.
 
 Typical example:
-<TBD>
+TBD
 
 hardbus example:
 ```c++
@@ -89,3 +89,4 @@ struct ProxyStringConverter<CustomType>
 } // namespace hardbus
 
 ```
+Depends on boost-preprocessor and Verdigris libraries (also header-only)
